@@ -10,6 +10,16 @@ Based on  [CoreELEC](https://github.com/CoreELEC/CoreELEC) and [Lakka](https://g
 ### ⚠️**IMPORTANT**⚠️
 #### EmuELEC is now aarch64 ONLY, compiling and using the ARM version after version 3.9 is no longer supported. Please have a look at the master_32bit branch if you want to build the 32-bit version.
 
+
+### t96 s905W 安装依赖库以及编译：
+```
+ apt install unzip wget xz-utils libsdl2-dev libsdl2-mixer-dev libfreeimage-dev libfreetype6-dev libcurl4-openssl-dev rapidjson-dev libasound2-dev libgl1-mesa-dev build-essential libboost-all-dev fonts-droid-fallback libvlc-dev libvlccore-dev vlc-bin texinfo premake4 golang libssl-dev curl patchelf xmlstarlet default-jre xsltproc
+ git clone https://github.com/EmuELEC/EmuELEC.git
+ cd EmuELEC
+ git checkout dev
+ PROJECT=Amlogic DEVICE=AMLGX ARCH=aarch64 DISTRO=EmuELEC make image
+
+```
 ---
 ## Development
 
